@@ -20,7 +20,7 @@ const Register = () => {
       username: username,
     };
     axios
-      .post("http://localhost:8080/authentication/register", data, {
+      .post("https://myserverapp.tech/authentication/register", data, {
         withCredentials: true,
       })
       .then((response) => {
@@ -45,7 +45,7 @@ const Register = () => {
       <button
         onClick={() => {
           window.location.href =
-            "http://localhost:8080/oauth2/authorization/google";
+            "https://myserverapp.tech/oauth2/authorization/google";
         }}
         className="flex items-center justify-center w-full border border-gray-300 rounded-lg py-2 hover:bg-gray-100 transition"
       >

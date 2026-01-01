@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const google = () => {
       axios
-        .get(`http://localhost:8080/api/v1/getuserinfo`, {
+        .get(`https://myserverapp.tech/api/v1/getuserinfo`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -50,7 +50,7 @@ const Home = () => {
 
     axios
       .put(
-        "http://localhost:8080/api/v1/updatedetails",
+        "https://myserverapp.tech/api/v1/updatedetails",
         {
           email: emailref.current.value,
           username: usernameref.current.value,
