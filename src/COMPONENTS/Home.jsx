@@ -63,8 +63,12 @@ const Home = () => {
         }
       )
       .then((resp) => {
-        if (resp.status === 202) {
+        if (resp.status === 200) {
           console.log("pwd updated successfully");
+          setuserinfo((prev) => ({
+            ...prev,
+            logintype: "google",
+          }));
         } else if (resp.status === 404) {
           console.log("email not found");
         } else if (resp.status === 304) {
