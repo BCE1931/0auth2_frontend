@@ -154,6 +154,12 @@ const Home = () => {
             >
               👉 Delete page
             </Link>
+            <Link
+              to="/reset"
+              className="block rounded-md border border-gray-300 bg-gray-50 px-4 py-2 font-medium text-gray-700 hover:bg-gray-100 transition"
+            >
+              👉 Reset page
+            </Link>
           </div>
         </div>
       )}

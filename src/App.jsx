@@ -9,6 +9,8 @@ import Intro from "./QRAPHQL/Intro";
 import Add from "./QRAPHQL/Add";
 import Updateprice from "./QRAPHQL/Updateprice";
 import All from "./QRAPHQL/All";
+import Register2 from "./COMPONENTS/Register2";
+import Resetpwd from "./COMPONENTS/Resetpwd";
 
 const isAuthenticated = () => {
   return !!localStorage.getItem("token");
@@ -82,6 +84,10 @@ const App = () => {
       />
 
       <Route path="/middle" element={<Middle />} />
+
+      <Route path="/register2" element={<Register2 />} />
+
+      <Route path="/reset" element={<Resetpwd />} />
     </Routes>
   );
 };
